@@ -1,0 +1,4 @@
+# Ignore system cruft
+*.swp
+*~
+.DS_store

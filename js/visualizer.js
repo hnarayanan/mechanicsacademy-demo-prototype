@@ -11,6 +11,7 @@ window.onload = function() {
     solution.file = 'data/skull.vtk';
     // .. make it transparent
     solution.opacity = 0.7;
+    solution.magicmode = true;
 
     // .. add the mesh
     r.add(solution);

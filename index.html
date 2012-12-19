@@ -283,7 +283,7 @@ are defined using UFL syntax:</p>
 </div>
 <p>Next, the material parameters are set and the strain energy density
 and the total potential energy are defined, again using UFL syntax:</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="c"># Elasticity parameters</span>
+<div class="highlight-python"><div class="highlight"><pre class="text-info"><span class="c"># Elasticity parameters</span>
 <span class="n">E</span><span class="p">,</span> <span class="n">nu</span> <span class="o">=</span> <span class="mf">10.0</span><span class="p">,</span> <span class="mf">0.3</span>
 <span class="n">mu</span><span class="p">,</span> <span class="n">lmbda</span> <span class="o">=</span> <span class="n">Constant</span><span class="p">(</span><span class="n">E</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="n">nu</span><span class="p">))),</span> <span class="n">Constant</span><span class="p">(</span><span class="n">E</span><span class="o">*</span><span class="n">nu</span><span class="o">/</span><span class="p">((</span><span class="mi">1</span> <span class="o">+</span> <span class="n">nu</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="mi">2</span><span class="o">*</span><span class="n">nu</span><span class="p">)))</span>
 
@@ -294,6 +294,7 @@ and the total potential energy are defined, again using UFL syntax:</p>
 <span class="n">Pi</span> <span class="o">=</span> <span class="n">psi</span><span class="o">*</span><span class="n">dx</span> <span class="o">-</span> <span class="n">dot</span><span class="p">(</span><span class="n">B</span><span class="p">,</span> <span class="n">u</span><span class="p">)</span><span class="o">*</span><span class="n">dx</span> <span class="o">-</span> <span class="n">dot</span><span class="p">(</span><span class="n">T</span><span class="p">,</span> <span class="n">u</span><span class="p">)</span><span class="o">*</span><span class="n">ds</span>
 </pre></div>
 </div>
+<p><a class="btn btn-primary" href="#">Update calculation &raquo;</a></p>
 <p>Just as for the body force and traction vectors, <tt class="xref py py-class docutils literal"><span class="pre">Constant</span></tt> has been used for the model
 parameters <tt class="docutils literal"><span class="pre">mu</span></tt> and <tt class="docutils literal"><span class="pre">lmbda</span></tt> to avoid re-generation of C++ code
 when changing model parameters. Note that <tt class="docutils literal"><span class="pre">lambda</span></tt> is a reserved
@@ -329,7 +330,6 @@ to the screen:</p>
 </div>
 </div>
 </div>
-                    <p><a class="btn" href="#">View details &raquo;</a></p>
                 </div>
                 <div class="span6">
 		  <div id="visualization">
